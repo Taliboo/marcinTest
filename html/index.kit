@@ -28,7 +28,7 @@
             <div class="header__hero-img">
                 <div class="header__hero-shadow"></div>
                 <div class="header__text">
-                    <h1 class="header__title">Hi, i am Marcin...</h1>
+                    <h1 class="header__title"><span class="header__animTitle">Hi, i am Marcin...</span></h1>
                     <a class="header__btn" type="button" href="#about-me">meet me...</a>
                 </div>
             </div>
@@ -93,13 +93,13 @@
         <section class="contact section" id="contact">
 
             <h2 class="contact__heading title">contact</h2>
-            <form class="contact__form" action="https://formsubmit.co/talib21215@gmail.com" method="POST">
+            <form onsubmit="sendEmail(); reset(); return false;" class="contact__form" id="contact__form">
                 <div class="contact__input-box">
-                    <input type="text" placeholder="Name" class="contact__input contact__input-up" id="name">
+                    <input type="text" placeholder="Name" class="contact__input contact__input-up" id="name" required>
                     <input type="text" placeholder="E-mail" class="contact__input contact__input-up" id="email" required>
                 </div>
                 <input type="text" placeholder="Subject" class="contact__input" id="subject" required>
-                <textarea name="" id="" cols="30" rows="10" placeholder="Message" class="contact__textarea contact__input" id="message" required></textarea>
+                <textarea cols="30" rows="10" placeholder="Message" class="contact__textarea contact__input" id="message" required></textarea>
 
                 <button type="submit" class="contact__btn">Send</button>
             </form>
@@ -113,9 +113,11 @@
         <p class="footer__text">© <span class="footer__year"></span> | Krystian Kucharski</p>
 
     </footer>
-
+    
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="dist/js/main.min.js"></script>
     <script src="dist/js/scrollSpy.min.js"></script>
+    <script src="dist/js/contactForm.min.js"></script>
 </body>
 
 </html>
