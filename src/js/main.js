@@ -32,6 +32,9 @@ burgerBtn.addEventListener('click', handleNav);
 navLinks.forEach((link) => {
 	link.addEventListener('click', handleNav);
 });
-document.addEventListener('DOMContentLoaded', animTitle);
+document.addEventListener('DOMContentLoaded', () => {
+	handleYear();
+	animTitle();
+});
 
 console.log(mainTitle);

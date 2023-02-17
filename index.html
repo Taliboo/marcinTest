@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marcin Zglinicki</title>
 
+
+    <script src="https://kit.fontawesome.com/22513783b9.js" crossorigin="anonymous"></script>
+
+
     <link rel="stylesheet" href="dist/css/style.min.css">
 </head>
 
@@ -35,13 +39,15 @@
         </header>
 
         <section class="aboutme section" id="about-me">
-            <h2 class="title">about me</h2>
+            <h2 class="aboutme__heading title">about me</h2>
             <img src="dist/img/foto_small.jpg" alt="" class="aboutme__footage">
             <p class="aboutme__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus adipisci quos
                 officia aperiam magnam ea, quas tenetur consectetur maiores consequuntur quam ab, provident deleniti.
                 Dolor quiprovident voluptatum, fugiat cupiditate mollitia et perspiciatis modi corporis quae,
                 recusandae, cum esse architecto molestiae ex consequuntur porro possimus quo deserunt reprehenderit
                 neque. Sunt minima fugit nisi doloribus, nulla numquam alias asperiores dolorem!</p>
+                <p class="aboutme__text">You can check my Github:</p>
+                <a href="https://www.google.com/webhp?hl=pl&sa=X&ved=0ahUKEwjP-umVzJz9AhVZgosKHdCNAdIQPAgJ"><i class="fa-brands fa-github social-icons"></i></a>
 
         </section>
 
@@ -93,6 +99,17 @@
         <section class="contact section" id="contact">
 
             <h2 class="contact__heading title">contact</h2>
+
+            <div class="contact__socials-box">
+                <h3 class="contact__social-title">Check my other socials below...</h3>
+                <div class="contact__social-icons-box">
+                    
+                    <a href=""><i class="fa-brands fa-github social-icons"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook social-icons"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram social-icons"></i></a>
+                </div>
+                <h3 class="contact__social-title">Or write to me !</h3>
+            </div>
             <form onsubmit="sendEmail(); reset(); return false;" class="contact__form" id="contact__form">
                 <div class="contact__input-box">
                     <input type="text" placeholder="Name" class="contact__input contact__input-up" id="name" required>
